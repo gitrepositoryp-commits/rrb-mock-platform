@@ -26,6 +26,18 @@ let backupQuestions = [
     optionsHi: ["3", "4", "5", "6"],
     correctAnswer: 1
   }
+  {
+  id: 3,
+  question: "Who was the first Indian woman to win an Olympic medal?",
+  options: ["Karnam Malleswari", "P. V. Sindhu", "Saina Nehwal", "Mary Kom"],
+  correctAnswer: "A"
+},
+{
+  id: 4,
+  question: "Which country will host the 2026 ICC Men's T20 World Cup?",
+  options: ["India and Sri Lanka", "Australia", "England", "South Africa"],
+  correctAnswer: "A"
+}
 ];
 
 const MONGO_URI = "mongodb://publicUser:RRBtest2026@ac-vbyz6-shard-00-00.vbyz6.mongodb.net:27017,ac-vbyz6-shard-00-01.vbyz6.mongodb.net:27017,ac-vbyz6-shard-00-02.vbyz6.mongodb.net:27017/rrb_platform?ssl=true&replicaSet=atlas-m4vj0w-shard-0&authSource=admin&retryWrites=true&w=majority";
