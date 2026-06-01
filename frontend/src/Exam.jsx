@@ -11,7 +11,7 @@ export default function Exam() {
 
   // Fetch standard patterns out of backend node
   useEffect(() => {
-    fetch('http://localhost:5000/api/exam/questions')
+    fetch('https://rrb-mock-platform-production.up.railway.app/api/exam/questions')
       .then(res => res.json())
       .then(data => {
         setQuestions(data);
