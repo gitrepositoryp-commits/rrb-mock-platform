@@ -44,9 +44,16 @@ export default function Exam() {
   const q = questions[currentIdx];
 
   // Exam Event Handler Controls
-  const handleOptionSelect = (optIdx) => {
-    setSelectedAnswers({ ...selectedAnswers, [currentIdx]: optIdx });
-  };
+ const handleNextQuestion = () => {
+  // Guard Rail: If we are on the very last question, stop the page navigation loop!
+  if (currentQuestionIndex === questions.length - 1) {
+    alert("You have completed all available questions! Please click 'SUBMIT TEST PAPER' to finish.");
+    return;
+  }
+  
+  // Otherwise, proceed safely to the next question object index
+  setCurrentQuestionIndex(prev => prev + 1);
+};
 
   const saveAndNext = () => {
     const updatedStatuses = { ...statuses };
