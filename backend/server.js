@@ -25,7 +25,7 @@ let backupQuestions = [
     optionsEn: ["3", "4", "5", "6"],
     optionsHi: ["3", "4", "5", "6"],
     correctAnswer: 1
-  }
+  },
   {
   id: 3,
   question: "Who was the first Indian woman to win an Olympic medal?",
